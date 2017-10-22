@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SimulatorProject xmlns="https://github.com/TTExtensions/MouseClickSimulator">
+  <Title>Beg Animation</Title>
+  <Description>
+	This project is for Beg training. Make sure to have TTR running before starting training. Press the Windows key to stop running the training.
+  </Description>
+
+  <MainAction>
+    <Compound type="Sequential" minimumPause="300" maximumPause="800">
+	  <Loop count="2">
+        <Compound type="Sequential" minimumPause="50" maximumPause="50" loop="false">
+			<Speedchat menuItems="3, 0, 1" />
+			<Speedchat menuItems="3, 4" />
+        </Compound>
+       </Loop>
+      <PressKey key="Right" duration="50" />
+	</Compound>
+  </MainAction>
+
+</SimulatorProject>
